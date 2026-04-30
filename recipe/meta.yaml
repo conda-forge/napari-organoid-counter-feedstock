@@ -27,16 +27,14 @@ requirements:
     - bioio ==3.3.0
     - bioio-ome-tiff
     - bioio-tifffile
-    - bioio-imageio
     - bioio-czi
     - bioio-nd2
     - bioio-lif
-    - bioio-dv
     - pytorch <=2.5.1
     - torchvision ==0.20.1
     - opencv
-    - lxml_html_clean
-    - onnxruntime ==1.23.0  
+    - lxml-html-clean
+    - onnxruntime
     - qtpy
 
 test:
