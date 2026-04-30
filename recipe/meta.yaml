@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-organoid-counter-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_organoid_counter-{{ version }}.tar.gz
+  sha256: 25f6db80a252ae0568800f39b4b00090c840a108d9ff54e21841e56fec73f7b5
 
 build:
   noarch: python
