@@ -25,17 +25,17 @@ requirements:
     - numpy ==1.26.4
     - napari ==0.7.0
     - bioio ==3.3.0
-    - bioio-ome-tiff ==1.4.0
-    - bioio-tifffile ==1.3.0
-    - bioio-imageio ==1.3.0
-    - bioio-czi ==2.6.0
-    - bioio-nd2 ==1.6.2
-    - bioio-lif ==1.4.0
-    - bioio-dv ==1.2.0
+    - bioio-ome-tiff
+    - bioio-tifffile
+    - bioio-imageio
+    - bioio-czi
+    - bioio-nd2
+    - bioio-lif
+    - bioio-dv
     - pytorch <=2.5.1
     - torchvision ==0.20.1
     - opencv
-    - lxml_html_clean ==0.4.4
+    - lxml_html_clean
     - onnxruntime ==1.23.0  
     - qtpy
 
