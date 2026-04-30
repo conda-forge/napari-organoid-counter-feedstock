@@ -27,8 +27,6 @@ requirements:
     - bioio ==3.3.0
     - bioio-ome-tiff
     - bioio-tifffile
-    - bioio-czi
-    - bioio-nd2
     - bioio-lif
     - pytorch <=2.5.1
     - torchvision ==0.20.1
