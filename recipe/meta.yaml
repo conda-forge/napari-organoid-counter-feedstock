@@ -22,7 +22,6 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy ==1.26.4
     - napari ==0.7.0
     - bioio ==3.3.0
     - bioio-ome-tiff
