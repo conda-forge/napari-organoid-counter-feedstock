@@ -1,13 +1,15 @@
 {% set name = "napari-organoid-counter" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.9" %}
+{% set python_min = "3.11" %}
+{% set python_max = "3.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-organoid-counter-{{ version }}.tar.gz
-  sha256: fb9ebe7a0d3b9bff7face564fcef28fdd2b6466e288818ddcda59161f973dbdd
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_organoid_counter-{{ version }}.tar.gz
+  sha256: 25f6db80a252ae0568800f39b4b00090c840a108d9ff54e21841e56fec73f7b5
 
 build:
   noarch: python
@@ -17,16 +19,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8,<3.11
-    - setuptools-scm
+    - python {{ python_min }}
+    - setuptools
   run:
-    - napari >=0.4.17
-    - napari-aicsimageio >=0.7.2
-    - numpy
-    - python >=3.8,<3.11
-    - pytorch >=1.13.1
-    - scikit-image
-    - torchvision >=0.14.1
+    - python >={{ python_min }},<{{ python_max }}
+    - numpy ==2.2.6
+    - napari ==0.7.0
+    - bioio ==3.3.0
+    - pytorch ==2.5.1
+    - torchvision ==0.20.1
+    - bioio-ome-tiff ==1.4.0
+    - bioio-tifffile ==1.3.0
+    - bioio-lif ==1.4.0
+    - opencv ==4.12.0
+    - onnxruntime ==1.22.2
     - qtpy
 
 test:
@@ -36,6 +42,7 @@ test:
     - pip list
     # - pip check  # Fails due to aicsimageio deps and fixed constraints that were relaxed
   requires:
+    - python {{ python_min }}
     - pip
     - pyqt
 
@@ -48,6 +55,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - francesco-campi
     - christinab12
     - goanpeca
     - jaimergp
