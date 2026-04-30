@@ -23,6 +23,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }},<{{ python_max }}
+    - numoy ==2.2.6
     - napari ==0.7.0
     - bioio ==3.3.0
     - pytorch ==2.5.1
