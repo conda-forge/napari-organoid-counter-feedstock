@@ -22,13 +22,13 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - napari ==0.7.0
-    - bioio ==3.3.0
+    - napari >=0.7,<0.8
+    - bioio
+    - pytorch
+    - torchvision
     - bioio-ome-tiff
     - bioio-tifffile
     - bioio-lif
-    - pytorch <=2.5.1
-    - torchvision ==0.20.1
     - opencv
     - lxml-html-clean
     - onnxruntime
