@@ -146,6 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@christinab12](https://github.com/christinab12/)
+* [@francesco-campi((https://github.com/francesco-campi/)]
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jaimergp](https://github.com/jaimergp/)
 
