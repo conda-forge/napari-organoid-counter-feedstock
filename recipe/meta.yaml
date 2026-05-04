@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,6 +24,7 @@ requirements:
   run:
     - python >={{ python_min }},<{{ python_max }}
     - numpy ==2.2.6
+    - pyqt
     - napari ==0.7.0
     - bioio ==3.3.0
     - pytorch ==2.5.1
