@@ -1,5 +1,5 @@
 {% set name = "napari-organoid-counter" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 {% set python_min = "3.11" %}
 {% set python_max = "3.12" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_organoid_counter-{{ version }}.tar.gz
-  sha256: fb51d6a2a75ccb1f8b6733a0de49976716f84084f95d101ee09f59ddf8c1428e
+  sha256: 32978b38fe904add18063cbc287b8ee58768945d2684397562c58fa1b30cadd8
 
 build:
   noarch: python
