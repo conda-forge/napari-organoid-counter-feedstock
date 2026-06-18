@@ -1,7 +1,7 @@
 {% set name = "napari-organoid-counter" %}
 {% set version = "0.2.12" %}
 {% set python_min = "3.11" %}
-{% set python_max = "3.12" %}
+# {% set python_max = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - python >={{ python_min }},<{{ python_max }}
+    - python >={{ python_min }} #,<{{ python_max }}
     - numpy ==2.2.6
     - pyqt
     - napari >=0.7.0
