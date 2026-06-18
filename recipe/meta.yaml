@@ -1,5 +1,5 @@
 {% set name = "napari-organoid-counter" %}
-{% set version = "0.2.12" %}
+{% set version = "0.2.13" %}
 {% set python_min = "3.11" %}
 {% set python_max = "3.13" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_organoid_counter-{{ version }}.tar.gz
-  sha256: bb1aadd29501462cc6835a9adfb81fb47ab7169e3c8cf514dcc1cc295dd183f8
+  sha256: 121bccd14e51912bd5e48b741926639c3e7dee064b97bedd6008edb605c37877
 
 build:
   noarch: python
@@ -27,8 +27,8 @@ requirements:
     - pyqt
     - napari >=0.7.0
     - bioio ==3.3.0
-    - pytorch ==2.5.1
-    - torchvision ==0.20.1
+    - pytorch
+    - torchvision
     - bioio-ome-tiff ==1.4.0
     - bioio-tifffile ==1.3.0
     - bioio-lif ==1.4.0
